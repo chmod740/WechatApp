@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:weightSum="1">
+    <!-- 标题布局-->
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="#262C31"
+            android:orientation="horizontal">
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:orientation="vertical">
+
+            <ImageButton
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:background="@drawable/icon_back"
+                    android:id="@+id/btn_back"
+                    android:gravity="center_vertical"
+            />
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:orientation="vertical">
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="match_parent"
+                      android:textColor="#FFFFFF"
+                      android:text="安卓二班(44)"
+                      android:id="@+id/tv_chat_name"
+                      android:textSize="25dp"
+                      android:layout_centerVertical="true"
+                      android:gravity="center_vertical"
+            />
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="55dp"
+                android:orientation="vertical"
+                android:gravity="right"
+                android:layout_gravity="right|center_vertical"
+        >
+            <ImageButton
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/icon_person"
+                    android:id="@+id/btn_person_or_group"
+                    android:gravity="center_vertical"
+            />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+    >
+        <!--<ScrollView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent">-->
+            <!--<LinearLayout android:layout_width="match_parent"-->
+                          <!--android:layout_height="match_parent"-->
+                          <!--android:orientation="vertical">-->
+        <!--主界面布局-->
+        <!--<com.handmark.pulltorefresh.library.PullToRefreshScrollView-->
+                <!--xmlns:ptr="http://schemas.android.com/apk/res-auto"-->
+                <!--android:id="@+id/pull_to_refresh"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--ptr:ptrAnimationStyle="flip"-->
+                <!--ptr:ptrMode="pullFromStart">-->
+            <ListView android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:id="@+id/lv_chat_detail"
+                      android:transcriptMode="alwaysScroll"
+                      android:dividerHeight="1px"
+                      android:divider="#FFFFFFFF"
+            >
+            </ListView>
+        <!--</com.handmark.pulltorefresh.library.PullToRefreshScrollView>-->
+
+
+
+            <!--</LinearLayout>-->
+        <!--</ScrollView>-->
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:inputType="textPersonName"
+                android:text=""
+                android:ems="10"
+                android:id="@+id/et_message"
+                android:layout_weight="1"/>
+        <Button
+                android:text="发送"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_send"
+                android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

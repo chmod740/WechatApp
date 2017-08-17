@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff">
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+        <!-- 标题布局-->
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="#ee030501"
+                android:orientation="horizontal">
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="55dp"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<ImageButton-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:layout_marginTop="15dp"-->
+            <!--android:layout_width="28dp"-->
+            <!--android:layout_height="28dp"-->
+            <!--android:background="@drawable/icon_back"-->
+            <!--android:id="@+id/btn_back"-->
+            <!--android:gravity="center_vertical"-->
+            <!--/>-->
+
+            <!--</LinearLayout>-->
+
+            <LinearLayout
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:orientation="vertical">
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="match_parent"
+                          android:textColor="#FFFFFF"
+                          android:text="微信"
+                          android:textSize="25dp"
+                          android:gravity="center_vertical"
+                />
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:orientation="horizontal"
+                    android:gravity="right"
+                    android:layout_gravity="right|center_vertical">
+                <ImageButton
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/icon_search"
+                        android:id="@+id/btn_search"
+                        android:gravity="center_vertical"
+                />
+
+                <ImageButton
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/icon_add"
+                        android:id="@+id/btn_add_menu"
+                        android:gravity="center_vertical"
+                />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+        >
+            <FrameLayout
+                    android:id="@+id/fragment_main1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+            </FrameLayout>
+            <FrameLayout
+                    android:id="@+id/fragment_main2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+            </FrameLayout>
+            <FrameLayout
+                    android:id="@+id/fragment_main3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" android:layout_alignParentBottom="true">
+            </FrameLayout>
+            <FrameLayout
+                    android:id="@+id/fragment_main4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+            </FrameLayout>
+        </RelativeLayout >
+        <!--此处是下面三个按钮的布局-->
+        <LinearLayout
+                android:layout_gravity="bottom"
+                android:layout_width="fill_parent"
+                android:layout_height="110dp"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+        >
+            <LinearLayout
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:id="@+id/ll_chat">
+                <FrameLayout android:layout_width="30dp"
+                             android:layout_height="30dp"
+                             android:layout_gravity="center_horizontal">
+                    <ImageView android:layout_width="25dp"
+                               android:layout_height="25dp"
+                               android:background="@drawable/icon_chat"
+                               android:layout_marginTop="5dp"
+                               android:id="@+id/imageView1"
+                    />
+                    <TextView android:layout_width="18dp"
+                              android:layout_height="18dp"
+                              android:layout_marginTop="0dp"
+                              android:layout_marginRight="0dp"
+                              android:layout_gravity="right"
+                              android:gravity="center"
+                              android:id="@+id/tv_unread_message_count"
+                              android:textColor="#FFFFFF"
+                              android:text="11"
+                              android:textSize="15dp"
+                    />
+                </FrameLayout>
+
+                <Button
+                        android:id="@+id/button1"
+                        android:background="@drawable/button_select_change"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:text="微信"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:id="@+id/ll_contact">
+                <FrameLayout android:layout_width="30dp"
+                             android:layout_height="30dp"
+                             android:layout_gravity="center_horizontal">
+                    <ImageView android:layout_width="25dp"
+                               android:layout_height="25dp"
+                               android:background="@drawable/icon_contact"
+                               android:id="@+id/imageView2"
+                               android:layout_marginTop="5dp"
+                    />
+                </FrameLayout>
+
+                <Button
+                        android:id="@+id/button2"
+                        android:background="@drawable/button_select_change"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dip"
+                        android:layout_marginRight="1dip"
+                        android:textSize="15sp"
+                        android:text="通讯录"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:id="@+id/ll_explore">
+                <FrameLayout android:layout_width="30dp"
+                             android:layout_height="30dp"
+                             android:layout_gravity="center_horizontal"
+                >
+                    <ImageView android:layout_width="25dp"
+                               android:layout_height="25dp"
+                               android:background="@drawable/icon_compass"
+                               android:layout_gravity="center_horizontal"
+                               android:id="@+id/imageView3"
+                               android:layout_marginTop="5dp"
+                    />
+                </FrameLayout>
+
+                <Button
+                        android:id="@+id/button3"
+                        android:background="@drawable/button_select_change"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:textSize="15sp"
+                        android:text="发现"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:id="@+id/ll_me">
+                <FrameLayout android:layout_width="30dp"
+                             android:layout_height="30dp"
+                             android:layout_gravity="center_horizontal">
+                    <ImageView android:layout_width="25dp"
+                               android:layout_height="25dp"
+                               android:background="@drawable/icon_user"
+                               android:id="@+id/imageView4"
+                               android:layout_marginTop="5dp"
+                    />
+                </FrameLayout>
+
+                <Button
+                        android:id="@+id/button4"
+                        android:background="@drawable/button_select_change"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:textSize="15sp"
+                        android:text="我"/>
+            </LinearLayout>
+            <!--<LinearLayout-->
+                    <!--android:layout_height="fill_parent"-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_weight="1">-->
+                <!--<Button-->
+                        <!--android:id="@+id/button4"-->
+                        <!--android:layout_marginLeft="1dip"-->
+                        <!--android:background="@drawable/button_select_change"-->
+                        <!--android:layout_width="fill_parent"-->
+                        <!--android:layout_height="fill_parent"-->
+                        <!--android:text="发现"/>-->
+            <!--</LinearLayout>-->
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+

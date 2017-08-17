@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#FFFFFF">
+    <!-- 标题布局-->
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="#ee030501">
+        <Button
+                android:layout_width="35dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/back"
+                android:textColor="@android:color/white"
+                android:layout_alignParentLeft="true"
+                android:textSize="20sp"
+                android:layout_alignParentTop="true"
+                android:id="@+id/btn_back_to_login"
+        />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="注册"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+    </RelativeLayout>
+
+
+    <LinearLayout android:orientation="horizontal"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="15dp">
+        <EditText
+
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:hint="请输入您的用户名"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/et_username"
+        />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="8dp">
+        <EditText
+
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:hint="请输入您的邮箱"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/et_email"
+        />
+    </LinearLayout>
+
+
+    <LinearLayout android:orientation="horizontal"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="8dp">
+        <EditText
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:hint="请输入密码"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/et_password"
+                android:password="true"
+        />
+    </LinearLayout>
+
+    <LinearLayout android:orientation="horizontal"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="8dp">
+        <EditText
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:hint="请输入密码"
+                android:inputType="textPassword"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/et_repassword"
+                android:password="true"
+        />
+    </LinearLayout>
+
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="注册"
+            android:background="@drawable/shape_button"
+            android:textColor="#ffffff"
+            android:textSize="17dp"
+            android:id="@+id/btn_sign_up"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+    />
+
+</LinearLayout>

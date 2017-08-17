@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".MainActivity" >
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center_horizontal|center_vertical"
+                  android:orientation="vertical">
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:textSize="30dp"
+                  android:text="正在同步联系人"
+                  android:id="@+id/tv_show_msg"
+                  android:gravity="center_horizontal"/>
+        <ProgressBar
+                android:id="@+id/pbLarge"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+        />
+
+    </LinearLayout>
+
+
+</LinearLayout>
