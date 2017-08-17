@@ -13,3 +13,6 @@
 #### 作者：hupeng(hupeng@imudges.com)
 #### 完成时间：2017-08-10 -- 2017-08-17
 #### 感谢 [shianqi](https://github.com/shianqi/) 对于本项目部分代码的优化提供的宝贵建议
+
+## 项目的演示（gif图片，可能需要一些时间加载）：
+![image](https://github.com/imu-hupeng/WechatApp/raw/master/demo.gif)
